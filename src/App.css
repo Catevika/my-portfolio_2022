@@ -1,0 +1,103 @@
+#root {
+  max-width: 1280px;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+Link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: var(--gray-60);
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+Link:hover,
+Link:active,
+.active-link {
+  font-weight: 600;
+  color: var(--light-green);
+}
+
+body {
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.4rem;
+}
+
+button {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--light-green);
+  background-color: var(--ultra-dark);
+  border: 1px solid var(--light-green);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  color: var(--ultra-dark);
+  border-color: var(--ultra-dark);
+  background-color: var(--light-green);
+}
+
+button:focus-visible {
+  outline: 1px auto var(--dark);
+}
+
+ul {
+  -webkit-padding-start: 20px;
+  padding-inline-start: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  list-style: none;
+  color: inherit;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-right: 0.6rem
+}
+
+.active-link>.icon {
+  color: var(--light-green);
+}
+
+.white-icon>path {
+  fill: var(--white);
+  stroke: var(--ultra-dark);
+}
+
+.active-link>.white-icon>path {
+  fill: var(--light-green);
+}
+
+.white-icon>g {
+  fill: var(--ultra-dark);
+}
+
+.title-span {
+  color: var(--light-green);
+}

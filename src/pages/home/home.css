@@ -1,0 +1,54 @@
+.home-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-height: calc(100vh - 48px);
+  background-image: linear-gradient(to right, var(--ultra-night-70), var(--ultra-dark-70)), url('assets/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2rem;
+}
+
+.home-content {
+  margin: 0 60px 0 33%;
+  padding: 20px;
+  border-radius: 10px;
+  background-image: linear-gradient(135deg, var(--ultra-night), var(--ultra-dark-20));
+  box-shadow: 0 0 10px var(--box-shadow-dark-around);
+}
+
+@media screen and (max-width:835px) {
+  .home-content {
+    margin: 0 40px 0 128px;
+  }
+}
+
+@media screen and (max-width:520px) {
+  .home-content {
+    margin: 0 20px 0 68px;
+  }
+}
+
+.home-intro {
+  margin-bottom: 0;
+}
+
+.home-text {
+  font-weight: 300;
+}
+
+.home-link {
+  color: var(--light-green);
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.home-btn {
+  margin: 0 auto;
+}

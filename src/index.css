@@ -1,0 +1,54 @@
+:root {
+  --ultra-night: hsl(251, 30%, 20%);
+  --ultra-night-70: hsla(251, 30%, 20%, 0.7);
+  --ultra-night-50: hsla(251, 30%, 20%, 0.5);
+  --ultra-dark: hsl(251, 30%, 25%);
+  --ultra-dark-70: hsla(251, 30%, 25%, 0.7);
+  --ultra-dark-20: hsla(251, 30%, 25%, 0.2);
+  --dark: hsl(251, 30%, 35%);
+  --dark-50: hsl(251, 30%, 35%, 0.5);
+  --gray: hsl(251, 30%, 85%);
+  --gray-60: hsl(251, 30%, 85%, 0.6);
+  --white: hsl(251, 30%, 95%);
+  --dark-red: hsl(343, 60%, 35%);
+  --light-green: hsl(80, 51%, 50%);
+  --aqua: hsla(179, 71%, 50%);
+  --aqua-30: hsla(179, 71%, 50%, 0.3);
+  --fire: hsl(44, 88%, 50%);
+  --fire-30: hsl(44, 88%, 50%, 0.3);
+
+  --box-shadow-dark-around: hsla(0, 0%, 0%, 0.3);
+  --box-shadow-dark-right-bottom: hsla(0, 0%, 10%, 0.15);
+
+  --border-white: hsla(0, 0%, 100%, 0.15);
+
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--gray);
+  background-color: var(--ultra-dark);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--ultra-night);
+    background-color: var(--gray);
+  }
+}
