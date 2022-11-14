@@ -6,7 +6,9 @@ export default function Home() {
 	return (
 		<section className='home-container'>
 			<div className='home-content'>
-				<p className='home-intro'>Hello, my name is</p>
+				<p id='main_content' className='home-intro'>
+					Hello, my name is
+				</p>
 				<h1 className='title-span'>
 					<Link to='/about' className='home-link'>
 						Dominique Bello
@@ -23,11 +25,11 @@ export default function Home() {
 					<strong>UI&nbsp;&amp;&nbsp;UX</strong> and see it going&nbsp;
 					<strong>live</strong>!
 				</p>
-				<button className='home-btn'>
-					<Link to='/projects' className='home-link'>
+				<Link to='/projects' className='home-link'>
+					<button title='Recent projects' className='home-btn'>
 						Recent projects
-					</Link>
-				</button>
+					</button>
+				</Link>
 			</div>
 		</section>
 	);
