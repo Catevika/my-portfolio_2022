@@ -3,12 +3,16 @@ import { Link } from 'react-router-dom';
 import './noMatch.css';
 
 export default function NoMatch() {
+	const publicUrl = import.meta.env.VITE_PUBLIC_URL;
 	return (
-		<div>
-			<h2>Nothing to see here!</h2>
-			<p className='card'>
-				<Link to='/'>Go to the home page</Link>
-			</p>
+		<div className='card'>
+			<p className='no-match-text'>Sorry,</p>
+			<img src={publicUrl + 'no-match.jpg'} alt='' className='no-match-img' />
+			<Link to='/'>
+				<button title='Go to home page' className='no-match-btn'>
+					Go back to home page
+				</button>
+			</Link>
 		</div>
 	);
 }

@@ -1,17 +1,18 @@
 :root {
-  --ultra-night: hsl(251, 30%, 20%);
-  --ultra-night-70: hsla(251, 30%, 20%, 0.7);
+  --ultra-night: hsl(250, 29%, 20%);
+  --ultra-night-70: hsla(250, 29%, 20%, 0.702);
   --ultra-night-50: hsla(251, 30%, 20%, 0.5);
+  --ultra-night-20: hsla(251, 30%, 20%, 0.2);
   --ultra-dark: hsl(251, 30%, 25%);
   --ultra-dark-70: hsla(251, 30%, 25%, 0.7);
   --ultra-dark-20: hsla(251, 30%, 25%, 0.2);
   --dark: hsl(251, 30%, 35%);
   --dark-50: hsl(251, 30%, 35%, 0.5);
-  --gray: hsl(251, 30%, 85%);
+  --gray: hsl(250, 30%, 85%);
   --gray-60: hsl(251, 30%, 85%, 0.6);
   --white: hsl(251, 30%, 95%);
   --dark-red: hsl(343, 60%, 35%);
-  --light-green: hsl(80, 51%, 50%);
+  --light-green: #95c13e;
   --aqua: hsla(179, 71%, 50%);
   --aqua-30: hsla(179, 71%, 50%, 0.3);
   --fire: hsl(44, 88%, 50%);
@@ -26,10 +27,9 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
+  background: linear-gradient(-25deg, var(--ultra-dark), var(--ultra-dark-20));
   color-scheme: light dark;
   color: var(--gray);
-  background: linear-gradient(-25deg, var(--ultra-night), var(--ultra-dark-20));
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

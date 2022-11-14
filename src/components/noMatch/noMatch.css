@@ -1,7 +1,33 @@
 .card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 8px 8px var(--box-shadow-dark-right-bottom);
-  border: 1px solid var(--border-white);
+  width: 95vw;
+  height: 95vh;
+  font-size: 1.2rem;
+  padding: 0 20px;
+}
+
+.no-match-img {
+  width: 290px;
+  height: 290px;
+  padding: 20px;
+  border: 1px solid var(--gray);
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .card {
+    padding: 0 5px;
+  }
+
+  .no-match-img {
+    width: 230px;
+    padding: 0;
+  }
+}
+
+.no-match-text {
+  margin-bottom: 20px;
 }
