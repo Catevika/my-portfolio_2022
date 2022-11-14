@@ -2,9 +2,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
   min-height: calc(100vh - 48px);
-  background-image: linear-gradient(to right, var(--ultra-night-70), var(--ultra-dark-70)), url('assets/hero.jpg');
+  background-image: linear-gradient(135deg, var(--ultra-night-70) 60%, var(--ultra-dark-20)), url('assets/hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -45,6 +44,7 @@
 
 .home-link {
   color: var(--light-green);
+  font-weight: 700;
   margin-bottom: 0;
   padding-bottom: 0;
 }
